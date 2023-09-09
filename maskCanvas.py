@@ -1,7 +1,4 @@
 import os
-import cv2
-import glob
-import pyautogui
 import numpy as np
 from tkinter import *
 import matplotlib.pyplot as plt
