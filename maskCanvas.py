@@ -1,7 +1,4 @@
 import os
-import cv2
-import glob
-import pyautogui
 import numpy as np
 from tkinter import *
 import matplotlib.pyplot as plt
@@ -27,7 +24,7 @@ def fig(event):
     x2,y2=(event.x+15),(event.y+15)
     c.create_oval(x1, y1, x2, y2, fill='white', outline='white', tags='overlay')
     draw.ellipse([x1, y1, x2, y2], fill='white', outline='white')
-
+22
 def del_con(event):
     tk.title("Mask Canvas")
     plt.close('all')
