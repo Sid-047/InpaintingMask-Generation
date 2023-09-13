@@ -34,7 +34,7 @@ def img_con(event):
     c.delete(bg_img)
     c.update()
     outImg = '_Mask.'.join(inImg.split('.'))
-    print("---->", outImg)
+    print(Fore.BLUE+Style.BRIGHT+"---->"+outImg+Fore.RESET)
     
     img_ar = np.array(img)
     print('----------------->',img_ar.shape)
