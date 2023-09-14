@@ -4,7 +4,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/Sid-047/InpaintingMask-Generation.svg)](https://github.com/Sid-047/InpaintingMask-Generation/issues)
 [![GitHub Forks](https://img.shields.io/github/forks/Sid-047/InpaintingMask-Generation.svg)](https://github.com/Sid-047/InpaintingMask-Generation/network/members)
 
-> Py GUI tool for creating Maska for Image Inpainting
+> Py GUI tool for creating Masks for Image Inpainting
 
 ## Table of Contents
 
