@@ -1,13 +1,15 @@
 import os
 import numpy as np
 from tkinter import *
+from tkinter import filedialog
 import matplotlib.pyplot as plt
 from colorama import Fore, Style
 from PIL import Image, ImageTk, ImageDraw
 
 tk = Tk()
-os.chdir("testImages")
-inImg = "1.jpg"
+inImg = filedialog.askopenfilename(filetypes=[("Image files", "*.jpg *.jpeg *.png *.gif *.bmp *.tiff")])
+imgDir = ('/'.join([x.replace(" ", "~") for x in inImg.split("/")[:-1]])).replace("~", " ") + '/'
+print("----->", imgDir)
 
 tk.title("Mask Canvas")
 c=Canvas(tk, width=1024, height=1024, bg='black')
@@ -24,7 +26,7 @@ def fig(event):
     x2,y2=(event.x+15),(event.y+15)
     c.create_oval(x1, y1, x2, y2, fill='white', outline='white', tags='overlay')
     draw.ellipse([x1, y1, x2, y2], fill='white', outline='white')
-22
+
 def del_con(event):
     tk.title("Mask Canvas")
     plt.close('all')
