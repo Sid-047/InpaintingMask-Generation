@@ -1,7 +1,6 @@
 import os
 import numpy as np
 from tkinter import *
-from tkinter import filedialog
 import matplotlib.pyplot as plt
 from colorama import Fore, Style
 from PIL import Image, ImageTk, ImageDraw
